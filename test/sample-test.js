@@ -17,3 +17,13 @@ describe("Greeter", function () {
     expect(await greeter.greet()).to.equal("Hola, mundo!");
   });
 });
+
+describe("Yolo", function () {
+  it("Should run the file", async function () {
+    const Yolo = await ethers.getContractFactory("YOLO");
+    const yolo = await Yolo.deploy();
+    await yolo.deployed();
+
+    expect(await yolo.yoloIn()).to.equal();
+  });
+});
